@@ -1,9 +1,14 @@
 public class Regra {
     private int id;
-    private String antecedente;
+    private String antescedente;
     private String consequente;
 
     public Regra() {
+    }
+
+    public Regra(String antes, String cons) {
+        this.antescedente = antes;
+        this.consequente = cons;
     }
 
     public int getId() {
@@ -15,11 +20,11 @@ public class Regra {
     }
 
     public String getAntecedente() {
-        return antecedente;
+        return antescedente;
     }
 
     public void setAntecedente(String antecedente) {
-        this.antecedente = antecedente;
+        this.antescedente = antecedente;
     }
 
     public String getConsequente() {
