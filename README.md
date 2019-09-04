@@ -1,4 +1,4 @@
-# ia1_forward_backward
+# Sistema de recomendação de Smartphones usando encadeamento para frente.
 Parte 1 e 2 da disciplina de IA1 - IC UFAL: implementação de encadeamento pra frente e pra trás
 
 Como fazer funcionar:
