@@ -11,31 +11,37 @@ public class Main {
         List<String> listaRegras = new ArrayList<>();
 
         // FUNCIONALIDADE -> SMARTPHONE
-        listaRegras.add("smartphone -> nokia n8");
-        listaRegras.add("smartphone -> blackberry q10");
-        listaRegras.add("smartphone -> xiaomi mi mix");
-        listaRegras.add("smartphone -> htc 10");
-        listaRegras.add("smartphone -> galaxy s3");
-        listaRegras.add("smartphone -> google pixel xl");
-        listaRegras.add("smartphone -> moto e2");
-        listaRegras.add("smartphone -> moto g4 play");
-        listaRegras.add("smartphone -> moto g4");
-        listaRegras.add("mp3 -> siemens gs55-6");
-        listaRegras.add("mp3 -> multilaser p3298");
-        listaRegras.add("multichip -> multilaser p3298");
-        listaRegras.add("4g -> moto e2");
-        listaRegras.add("4g -> moto g4 play");
-        listaRegras.add("4g -> moto g4");
-        listaRegras.add("flash -> xiaomi mi mix");
-        listaRegras.add("flash -> htc 10");
-        listaRegras.add("flash -> moto g4 play");
-        listaRegras.add("flash -> moto g4");
-        listaRegras.add("leitor biometrico -> moto g4");
-        listaRegras.add("camera frontal -> galaxy s3");
-        listaRegras.add("camera frontal -> google pixel xl");
-        listaRegras.add("tela hd -> google pixel xl");
-        listaRegras.add("giroscopio -> htc 10");
-        listaRegras.add("teclado fisico -> blackberry q10");
+        listaRegras.add("Smartphone -> Xiaomi Mi 9");
+        listaRegras.add("Smartphone -> Huawei P30 Pro");
+        listaRegras.add("Smartphone -> Redmi Note 7");
+        listaRegras.add("Smartphone -> Moto G7 Plus");
+        listaRegras.add("Smartphone -> google pixel 2 xl");
+        listaRegras.add("Smartphone -> Motorola One Vision");
+        listaRegras.add("Smartphone -> LG K12 Plus");
+        listaRegras.add("Celular para Jogos -> Asus ROG Phone 2");
+        listaRegras.add("Celular para Jogos -> Razer Phone 2");
+        listaRegras.add("8GB RAM+ -> Asus ROG Phone 2");
+        listaRegras.add("8GB RAM+ -> OnePlus 7 Pro");
+        listaRegras.add("DualChip -> Zenfone 5");
+        listaRegras.add("DualChip -> Redmi Note 7");
+        listaRegras.add("4g -> Motorola One Vision");
+        listaRegras.add("4g -> Xiaomi Mi 9");
+        listaRegras.add("Melhor Câmera -> google pixel 2 xl");
+        listaRegras.add("Melhor Câmera -> Huawei P30 Pro");
+        listaRegras.add("Reconhecimento Facial -> Galaxy Note 10");
+        listaRegras.add("4K Vídeos -> Galaxy S10 Plus");
+        listaRegras.add("4K Vídeos -> google pixel 2 xl");
+        listaRegras.add("Full HD -> Huawei Mate 20 Pro");
+        listaRegras.add("Full HD -> LG K12 Plus");
+        listaRegras.add("Bateria de 4200 mAh -> Huawei Mate 20 Pro");
+        listaRegras.add("Proteção contra água -> iPhone XS Max");
+        listaRegras.add("Proteção contra água -> Galaxy S10 Plus");
+        listaRegras.add("Proteção contra água -> iPhone XS Max");
+        listaRegras.add("Cartão de memoria -> Galaxy A7");
+        listaRegras.add("Cartão de memoria -> Moto G7 Plus");
+        listaRegras.add("5g -> Galaxy S10 Plus");
+        listaRegras.add("Budget -> Xiaomi Pocophone F1");
+        listaRegras.add("IOS -> iPhone XS Max");
 
         Map<String, List<String>> hash = makeHashExemplo(listaRegras);
         return hash;
@@ -43,17 +49,21 @@ public class Main {
 
     private static List<String> getFuncionalidades() {
         List<String> facts = new ArrayList<>();
-        facts.add("smartphone");
-        facts.add("mp3");
-        facts.add("colorido");
-        facts.add("multichip");
+        facts.add("Smartphone");
+        facts.add("Celular para Jogos");
+        facts.add("8GB RAM+");
+        facts.add("DualChip");
         facts.add("4g");
-        facts.add("flash");
-        facts.add("leitor biometrico");
-        facts.add("camera frontal");
-        facts.add("tela hd");
-        facts.add("giroscopio");
-        facts.add("teclado fisico");
+        facts.add("5g");
+        facts.add("Melhor Câmera");
+        facts.add("Reconhecimento Facial");
+        facts.add("4K Vídeos");
+        facts.add("Full HD");
+        facts.add("Bateria de 4200 mAh");
+        facts.add("Proteção contra água");
+        facts.add("Cartão de memoria");
+        facts.add("Budget");
+        facts.add("IOS");
         return facts;
     }
 
