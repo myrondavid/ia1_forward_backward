@@ -1,20 +1,30 @@
+import Database.*;
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.util.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.toList;
 
 public class ResolverController {
 
     List<String> listFacts = new ArrayList<>();
     Resolver resolver;
+    DatabaseFato dbF = new DatabaseFato();
+    DatabaseRegra dbR = new DatabaseRegra();
 
     public ResolverController() {
 
     }
 
     public Map<String, List<String>> smartphoneRules() {
-        List<String> listaRegras = new ArrayList<>();
 
+        List<RegraDb> rules = dbR.getAll();
+        List<String> listaRegras = rules.stream().map(RegraDb::getRegra).collect(toList());
+
+
+        //List<String> listaRegras = new ArrayList<>();
         // FUNCIONALIDADE -> SMARTPHONE
+        /*
         listaRegras.add("Smartphone -> Xiaomi Mi 9");
         listaRegras.add("Smartphone -> Huawei P30 Pro");
         listaRegras.add("Smartphone -> Redmi Note 7");
@@ -46,29 +56,35 @@ public class ResolverController {
         listaRegras.add("5g -> Galaxy S10 Plus");
         listaRegras.add("Budget -> Xiaomi Pocophone F1");
         listaRegras.add("IOS -> iPhone XS Max");
-
+        */
         Map<String, List<String>> hash = makeHashExemplo(listaRegras);
         return hash;
     }
 
     public List<String> getFuncionalidades() {
-        List<String> facts = new ArrayList<>();
-        facts.add("Smartphone");
-        facts.add("Celular para Jogos");
-        facts.add("8GB RAM+");
-        facts.add("DualChip");
-        facts.add("4g");
-        facts.add("5g");
-        facts.add("Melhor Camera");
-        facts.add("Reconhecimento Facial");
-        facts.add("4K Videos");
-        facts.add("Full HD");
-        facts.add("Bateria de 4200 mAh");
-        facts.add("Protecao contra agua");
-        facts.add("Cartao de memoria");
-        facts.add("Budget");
-        facts.add("IOS");
-        return facts;
+
+        List<FatoDb> facts = dbF.getAll();
+        List<String> factsList = facts.stream().map(FatoDb::getFato).collect(toList());
+
+        /*
+        factsList.add("Smartphone");
+        factsList.add("Celular para Jogos");
+        factsList.add("8GB RAM+");
+        factsList.add("DualChip");
+        factsList.add("4g");
+        factsList.add("5g");
+        factsList.add("Melhor Camera");
+        factsList.add("Reconhecimento Facial");
+        factsList.add("4K Videos");
+        factsList.add("Full HD");
+        factsList.add("Bateria de 4200 mAh");
+        factsList.add("Protecao contra agua");
+        factsList.add("Cartao de memoria");
+        factsList.add("Budget");
+        factsList.add("IOS");
+        */
+        return factsList;
+
     }
 
     //exemplo para o  motor de inferencia

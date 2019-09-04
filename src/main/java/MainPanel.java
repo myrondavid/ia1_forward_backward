@@ -60,7 +60,7 @@ public class MainPanel extends JFrame {
 
         painelPrincipal.add(painelOpcoes);
         painelPrincipal.add(painelBotoes);
-        
+
         add(painelPrincipal);
 
         setLayout(new FlowLayout());
