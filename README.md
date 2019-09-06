@@ -2,8 +2,8 @@
 Projeto da disciplina de IA1 - IC UFAL no semestre de 2019.1
 Alunos: Myron David e Leonardo Leite
 
-Parte 1: implementação de encadeamento pra frente e pra trás
-Parte 2: sistema de recomendação de smartphones
+* Parte 1: implementação de encadeamento pra frente e pra trás
+* Parte 2: sistema de recomendação de smartphones
 
 ## Como fazer funcionar:
 * Criar um banco mysql com o nome "recomendacao_fone"
@@ -11,7 +11,7 @@ Parte 2: sistema de recomendação de smartphones
 * Ao executar pela primeira vez, descomentar as linhas indicadas na classe Main. Após a primeira execução, devem ser comentadas novamente para que não ocorram conflitos no banco.
 * Para adicionar regras ou fatos, basta modificar a classe Database, ou mudar diretamente no banco de dados.
 
-## Funcionamento
+## Funcionamento:
 * O codigo do encadeamento está na classe Resolver, sendo precisamente o método forwardResult(). 
 * Há também o método backwardResult que é a implementação do encadeamento para trás.
 * Para utiliza-los há a classe ResolverController, necessário instanciá-la assim como a classe Resolver.
